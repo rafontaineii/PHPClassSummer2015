@@ -7,11 +7,21 @@
     </head>
     <body>
         <?php
-            $a = 10;
-            $b = 7;
-            if(){
-                
+            $a = 0;
+            $b = false;
+            /*
+             * Triple equals compares both value and type
+             * double equals only comapres values
+             *               
+             */
+            if($a === $b){
+                echo 'A === B ';
             }
+                echo '<br /> ';
+                 if($a == $b){
+                echo 'A == B ';
+            }
+            
         ?>
     </body>
 </html>
