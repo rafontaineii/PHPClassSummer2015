@@ -7,20 +7,36 @@
     </head>
     <body>
         
-        <table>
+        <table border = "1">
             <tr>
                 <td>1</td>
                 <td>2</td>
                 <td>3</td>
-            </tr>    
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
         </table>
         
-             <ul>       
-                <?php
-                    for ($index = 1; $index < 10; $index++) : ?>
-                   <li><?php echo $index ?> </li>
-                <?php endfor; ?>   
-              </ul>
+<hr/> 
 
+        <?php
+            /*
+             * Table Generator
+           */
+        ?>
+        
+        <table border = "1">   
+                <?php
+                    for ($tr = 1; $tr <= 3; $tr++):?>
+                        <tr>
+                           <?php for ($td = 1; $td <= 3; $td++) : ?>
+                            <td> <?php echo $td; ?> </td>
+                           <?php endfor; ?> 
+                        </tr>
+                <?php endfor; ?>   
+        </table>      
     </body>
 </html>
