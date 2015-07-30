@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -18,7 +13,7 @@ and open the template in the editor.
          
          if (isPostRequest()) {
             $db = getDatabase();
-            $stmt = $db->prepare("INSERT INTO test SET firstName = :firstName, lastName = :lastName, dob = :dob, height = :height");
+            $stmt = $db->prepare("INSERT INTO actors SET firstName = :firstName, lastName = :lastName, dob = :dob, height = :height");
             $id = filter_input(INPUT_POST, 'id');
             $firstName = filter_input(INPUT_POST, 'firstName');
             $lastName = filter_input(INPUT_POST, 'lastName');
