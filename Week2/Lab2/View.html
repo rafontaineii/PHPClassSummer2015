@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Actors Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <?php 
+        
+            include './dbConn.php'; 
+        
+        ?>
+        
+        <div>
+            <h1>House of Cards</h1>
+            <br/>
+            <h4>List of Actors</h4>
+            
+            <form method="post" action="#">
+            
+            First Name <input type="text" value="" name="firstName"/>
+            <br />
+            Last Name <input type="text" value="" name="lastName"/>
+            <br />
+           Date Of Birth <input type="date" value="" name="dob"/>
+            <br />
+            Height <input type="text" value="" name="height"/>
+            <br />
+            <input type="submit" value="Submit"/>
+              
+            
+        </form>
+        </div>
+    </body>
+</html>
